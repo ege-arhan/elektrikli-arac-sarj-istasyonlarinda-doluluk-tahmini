@@ -1,0 +1,59 @@
+# Veri (ham / işlenmiş) — GitHub'a gitmez
+data/raw/**
+data/processed/**
+# Klasör yapısı ve indirme notları repoda kalsın
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/README.md
+
+*.csv
+*.parquet
+*.h5
+*.hdf5
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.json.gz
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Modeller / checkpoint
+*.pt
+*.pth
+*.ckpt
+*.joblib
+*.pkl
+models/checkpoints/
+
+# Ortam / gizli
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Log / çıktı
+logs/
+*.log
+
+# Makale / büyük PDF'ler (yerelde docs/ veya data yanında tutulabilir)
+*.pdf
+# Proje taslak raporu repoda kalsın
+!ELEKTRIKLI_ARAC_SARJ_ISTASYONLARINDA_DOLULUK_TAHMINI_1.pdf
