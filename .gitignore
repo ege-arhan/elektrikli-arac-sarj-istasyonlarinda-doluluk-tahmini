@@ -17,6 +17,7 @@ data/processed/**
 *.json.gz
 
 # Python
+uyz/
 .venv/
 venv/
 env/

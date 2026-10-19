@@ -1,10 +1,11 @@
 # proje yol haritası
 
-18 ekim 2026 durumu
+19 ekim 2026 durumu
 
-şu an 14 caltech dosyasındaki 31424 oturumu birlikte kullanıyoruz
-55 farklı şarj noktası var saatlik tablo 29705 satır ve 55 sütun
-notebook baştan sona çalışıyor ve ilk model karşılaştırması yapıldı
+şu an yalnız acn caltech ile ilerliyoruz
+14 çeyrek dosyada 31424 oturum 55 şarj noktası saatlik tablo 29705 x 55
+veri hazırlama ve ilk model karşılaştırması notebooks/01_veri_inceleme.ipynb içinde yapıldı
+selman bağımsız kontrolü notebooks/02_selman_kontrol.ipynb ile tekrarladı sayılar uyumlu
 
 hedef bir şarj noktasının bir sonraki saat başında dolu olup olmayacağını tahmin etmek
 aracın bağlı kaldığı zamanı connectionTime ile disconnectTime arasından alıyoruz
@@ -17,6 +18,20 @@ saatleri utc olarak tutuyoruz takvim bilgilerini los angeles saatine göre çık
 ilk denemede önceki saatin durumunu koruyan yöntem random foresttan daha iyi çıktı
 baseline f1 yaklaşık 0,733 random forest f1 yaklaşık 0,689
 bu sonuçlar ilk deneme sonuçları test kısmına birkaç kez baktığımız için yeni ayarları oraya göre seçmeyeceğiz
+
+çoklu veri seti stratejisi
+
+norveç ve urbanev dosyaları klasörde duruyor ama ilk modele katılmadı
+yapıları acn ile aynı değil hepsini tek tabloya birleştiremeyiz
+
+norveçte şarj noktası kimliği yok kullanıcı kimliği var bunu stationID yerine koymayacağız
+urbanev bölge ve istasyon düzeyinde zaman serisi içeriyor nokta bazlı 0/1 oturum tablosu değil
+
+sonraki aşamada her kaynak için önce neyi tahmin edeceğimizi ayrı netleştireceğiz
+ayrı hazırlayıp aynı doluluk hedefini ne kadar kurabildiğimize bakacağız
+uygun olanlarda yöntemi deneyip karşılaştıracağız
+hedef uyumunu görmeden aynı modeli aynen kullanırız demiyoruz
+farklı hedefleri aynı skor tablosuna koymayacağız
 
 iş bölümü
 
