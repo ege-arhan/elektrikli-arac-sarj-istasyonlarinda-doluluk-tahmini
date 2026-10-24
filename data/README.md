@@ -21,4 +21,5 @@ caltech [acn-data](https://ev.caltech.edu/dataset) ve [makale](https://doi.org/1
 norveç [zenodo](https://zenodo.org/records/13896176)
 urbanev [dryad](https://doi.org/10.5061/dryad.np5hqc04z)
 
-kaynakların lisans şartlarını ayrıca tamamlayacağız burada link bulunması kullanım koşullarının kontrol edildiği anlamına gelmiyor
+lisans ve atıf özeti [VERI_SETLERI.md](VERI_SETLERI.md) içinde
+ACN CC BY-NC-SA 4.0 Norveç CC BY 4.0 UrbanEV Dryad kaydından teyit edilmeli

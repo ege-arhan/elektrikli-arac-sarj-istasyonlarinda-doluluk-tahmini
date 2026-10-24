@@ -1,11 +1,14 @@
 # proje yol haritası
 
-19 ekim 2026 durumu
+20 ekim 2026 durumu
 
-şu an yalnız acn caltech ile ilerliyoruz
+şu an yalnız acn caltech ile ilerliyoruz 2 hafta acik maddeleri kapatildi
 14 çeyrek dosyada 31424 oturum 55 şarj noktası saatlik tablo 29705 x 55
-veri hazırlama ve ilk model karşılaştırması notebooks/01_veri_inceleme.ipynb içinde yapıldı
-selman bağımsız kontrolü notebooks/02_selman_kontrol.ipynb ile tekrarladı sayılar uyumlu
+veri hazırlama ve ilk model notebooks/01_veri_inceleme.ipynb
+bagimsiz kontrol notebooks/02_selman_kontrol.ipynb
+kapsama notebooks/03_kapsama_2020.ipynb eda notebooks/04_eda_grafikleri.ipynb
+okuyucu src/load_data.py testler tests/test_occupancy.py
+eksik id ve cakisan oturum 0 simdilik 0 etiketi kayit yok olarak kaliyor
 
 hedef bir şarj noktasının bir sonraki saat başında dolu olup olmayacağını tahmin etmek
 aracın bağlı kaldığı zamanı connectionTime ile disconnectTime arasından alıyoruz
@@ -63,12 +66,12 @@ ortam kurulumu veri indirme ve okuyucu ikinci haftada yapıldı aşağıdaki kut
 - [x] yerel saat haftanın günü hafta sonu ve önceki 1 ile 24 saatin doluluğu eklendi
 - [x] aylık oturum ve dolu saat tabloları çıkarıldı 2020 deki düşüş görüldü
 - [x] notebook sadeleştirildi hücrelerin üstüne açıklama yazıldı 12 kod hücresi baştan sona çalıştırıldı
-- [ ] okuyucuyu src/load_data.py içine alıp notebook dışından da çalıştıracağız
-- [ ] eksik stationID siteID sessionID alanlarını ve aynı noktadaki çakışan oturumları ayrıca kontrol edeceğiz
-- [ ] normal gece yarısını aşan saat başında biten ve hatalı oturumlar için küçük testler yazacağız
-- [ ] veri boşluklarıyla noktaların hizmette olduğu dönemleri inceleyip 0 etiketinin nasıl yorumlanacağını netleştireceğiz
-- [ ] eda grafiklerini ekleyeceğiz tablolar hazır ama grafik kısmı henüz yok
-- [ ] kaynakların lisans ve atıf bilgilerini tamamlayacağız
+- [x] okuyucuyu src/load_data.py içine alıp notebook dışından da çalıştıracağız
+- [x] eksik stationID siteID sessionID alanlarını ve aynı noktadaki çakışan oturumları ayrıca kontrol edeceğiz (eksik id 0 cakisan cift 0)
+- [x] normal gece yarısını aşan saat başında biten ve hatalı oturumlar için küçük testler yazacağız
+- [x] veri boşluklarıyla noktaların hizmette olduğu dönemleri inceledik notebooks/03_kapsama_2020.ipynb simdilik 0 kayit yok olarak kaliyor maske karari validation ile egeyle netlestirilecek
+- [x] eda grafiklerini ekleyeceğiz notebooks/04_eda_grafikleri.ipynb
+- [x] kaynakların lisans ve atıf bilgilerini data/VERI_SETLERI.md icine yazdik UrbanEV dryad teyidi acik
 
 ## 3 hafta 20 - 26 ekim
 

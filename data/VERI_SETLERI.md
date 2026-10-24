@@ -152,4 +152,17 @@ caltech dosyalarının json olarak açıldığı toplam kayıt sayısı ve kimli
 notebook 12 kod hücresiyle çalıştırıldı baseline ve random forest sonuçları ilk deneme olarak tutuluyor
 norveç csvlerinin dördünün boyutu da yerel dosyalardan sayıldı urbanev boyutları ise yukarıda belirtildiği gibi kaynak açıklamalarına dayanıyor
 ham dosyalar ve işlenmiş csvler gitignore kapsamında githuba gönderilmiyor
-kaynakların lisans şartlarının tamamı henüz ayrı ayrı doğrulanmadı
+
+## lisans ve atıf
+
+kontrol tarihi 20 ekim 2026 ders / arastirma kullanimi icin
+
+| kaynak | lisans (kaynak sayfasi) | atif |
+|---|---|---|
+| ACN-Data (Caltech) | CC BY-NC-SA 4.0 (EnergySHR / ACN portal ozeti) ticari kullanima kapali | Lee, Z. J., Li, T., & Low, S. H. (2019). ACN-Data: Analysis and Applications of an Open EV Charging Dataset. e-Energy '19. https://doi.org/10.1145/3307772.3328313 |
+| Norveç Zenodo | CC BY 4.0 | Sørensen, Å. L. et al. (2024). Data files... Zenodo. https://doi.org/10.5281/zenodo.13896176 ; makale https://doi.org/10.1016/j.dib.2024.110883 |
+| UrbanEV | Dryad kaydındaki lisans (genelde CC0/CC-BY varyantlari) indirdigimiz surumle dogrulanmali | makale https://www.nature.com/articles/s41597-025-04874-4 ; Dryad https://doi.org/10.5061/dryad.np5hqc04z |
+
+raporda bu atiflar kullanilacak
+ACN icin NC kosulu ders projesinde sorun degil urunlestirme olursa ayri bakilacak
+UrbanEV lisans satirini Dryad sayfasindan bir kez daha tiklayip teyit etmek iyi olur
