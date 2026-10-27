@@ -23,6 +23,6 @@ kapsama notu var maskeleme validation ayrimiyla egeyle netlestirilecek
 norvec ve urbanev sonraki asama ayri hedef
 lisans ozeti data/VERI_SETLERI.md icinde
 
-3 hafta sirasi
-selman takvim tatil open-meteo
-egeyle ortak validation tarihleri
+3 hafta
+takvim/tatil src/features/calendar.py eklendi testler gecti
+sirada open-meteo ve egeyle validation tarihleri

@@ -78,7 +78,7 @@ ortam kurulumu veri indirme ve okuyucu ikinci haftada yapıldı aşağıdaki kut
 - [x] ilk deneme için sıralamayı bozmadan yüzde 80 eğitim yüzde 20 test ayrıldı bu iş ikinci haftada yapıldı
 - [ ] yeni denemeler için eğitim döneminden ayrı doğrulama bölümü ayırıp ortak tarih sınırlarını belirleyeceğiz
 - [ ] selman geçmiş hava durumunu open-meteo üzerinden alacak
-- [ ] selman yerel takvim ve tatil bilgisini ekleyecek saat gün hafta sonu şu an var tatil henüz yok
+- [x] selman yerel takvim ve tatil bilgisini ekledi src/features/calendar.py (CA tatil + akademik ara; bazi yaz araliklari yaklasik)
 - [ ] hava durumunu saha ve zaman üzerinden eşleştireceğiz tahmin anında hangi bilgilerin bilinebileceğini kontrol edeceğiz
 - [ ] oturum sonunda belli olan enerji ve toplam süreyi giriş özelliği yapmayacağız ölçekleme gerekirse yalnız eğitimden öğreneceğiz
 
