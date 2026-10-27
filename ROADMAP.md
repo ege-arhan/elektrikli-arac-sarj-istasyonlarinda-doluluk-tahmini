@@ -77,9 +77,9 @@ ortam kurulumu veri indirme ve okuyucu ikinci haftada yapıldı aşağıdaki kut
 
 - [x] ilk deneme için sıralamayı bozmadan yüzde 80 eğitim yüzde 20 test ayrıldı bu iş ikinci haftada yapıldı
 - [ ] yeni denemeler için eğitim döneminden ayrı doğrulama bölümü ayırıp ortak tarih sınırlarını belirleyeceğiz
-- [ ] selman geçmiş hava durumunu open-meteo üzerinden alacak
+- [x] selman geçmiş hava durumunu open-meteo üzerinden aldi src/features/weather.py (caltech tek konum UTC saatlik)
 - [x] selman yerel takvim ve tatil bilgisini ekledi src/features/calendar.py (CA tatil + akademik ara; bazi yaz araliklari yaklasik)
-- [ ] hava durumunu saha ve zaman üzerinden eşleştireceğiz tahmin anında hangi bilgilerin bilinebileceğini kontrol edeceğiz
+- [x] hava durumunu saha ve zaman üzerinden eşleştirdik join_weather varsayilan shift_hours=1 ile t+1 hava sizintisini engeller
 - [ ] oturum sonunda belli olan enerji ve toplam süreyi giriş özelliği yapmayacağız ölçekleme gerekirse yalnız eğitimden öğreneceğiz
 
 ## 4 hafta 27 ekim - 2 kasım
