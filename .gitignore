@@ -58,3 +58,6 @@ logs/
 *.pdf
 # Proje taslak raporu repoda kalsın
 !ELEKTRIKLI_ARAC_SARJ_ISTASYONLARINDA_DOLULUK_TAHMINI_1.pdf
+
+# yerel not dosyaları
+.ortak/

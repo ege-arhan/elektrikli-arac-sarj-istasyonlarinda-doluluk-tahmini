@@ -28,17 +28,16 @@ from çeyreğin ilk günü 12:00 am to son günü 11:59 pm olacak şekilde seçi
 meta içindeki saatler utc olarak geldi son sınır 23:59:00 yazıyor bunu son dakikanın bütün saniyeleri dahil diye düşünmemek gerekiyor
 
 ilk 2018 q2 dosyasını tarayıcıdaki download düğmesinden indirdim
-kalanları claude aldı sayfayı yerleşik tarayıcıda açıp tarih biçimini ve sessions found sayılarını okudu
-indirme işlemini ise aynı download formunun isteğini komut satırından göndererek yaptı
-bütün dosyalara tarayıcıdan tek tek tıklamadı
-ilk q2 dosyasını bizim indirdiğimiz dosyayla bayt bayt karşılaştırıp aynı olduğunu bildirdi
-bu yöntem indirme sırasında kullanılan yöntem aynı sayfanın formu kullanıldı
+kalanları aynı sayfanın download formunun isteğini komut satırından göndererek indirdim tarih biçimini ve sessions found sayılarını sayfadan okudum
+bütün dosyalara tarayıcıdan tek tek tıklamadım
+ilk q2 dosyasını elle indirdiğim dosyayla bayt bayt karşılaştırdım aynı çıktı
+yani her iki yöntemde de aynı sayfanın formu kullanıldı
 formun adresini ve alan adlarını tahmin etmek yerine sayfadan okumak gerekiyor
 
-2018 q4 ve 2019 q2 q3 q4 ilk denemede kesik gelmiş onları geçerli json gelene kadar yeniden indirdi
-sonunda her dosyayı json olarak açtı _meta tarihlerini ve kayıt sayılarını kontrol etti
+2018 q4 ve 2019 q2 q3 q4 ilk denemede kesik gelmişti onları geçerli json gelene kadar yeniden indirdim
+sonunda her dosyayı json olarak açıp _meta tarihlerini ve kayıt sayılarını kontrol ettim
 her çeyreğin sayısı sayfadaki sessions found ile aynı çıktı
-ben de proje içindeki 14 dosyayı yeniden okuyup toplam 31424 farklı sessionID olduğunu kontrol ettim
+sonra proje içindeki 14 dosyayı yeniden okuyup toplam 31424 farklı sessionID olduğunu kontrol ettim
 bu sayı elimizdeki sorguların sonucu acn verisinin gelecekte de aynı kalacağını göstermiyor
 
 dosyalar data/raw/acn içinde
@@ -63,23 +62,18 @@ form değişmişse önce yeni alanları okurdum eksik jsonun sonuna parantez ekl
 ham dosyalar ve üretilen csvler gitignore içinde githuba gitmiyor
 repoyu indiren kişinin bu dosyaları ayrıca alması gerekiyor
 
-claude veya başka bir tarayıcı ajanına verilebilecek prompt
+tekrar indirmek için adımlar
 
-açık olan ev.caltech.edu/dataset sayfasındaki caltech verisini proje için indir
-2018 ikinci çeyrekten 2021 üçüncü çeyreğe kadar her çeyreği ayrı al
-sayfadaki tarih biçimini formun gerçek alanlarını ve download isteğini incele
-from ilk gün 12:00 am to son gün 11:59 pm olsun minimum energy boş kalsın
-sayfanın gerçek download formunu kullanarak komut satırından da indirebilirsin
-istek adresi veya alan adı uydurma tarihleri ve saat dilimini _meta üzerinden kontrol et
-her çeyrek için sessions found sayısını not et inen jsondaki _items sayısıyla karşılaştır
-json kesikse yeniden indir eksik dosyanın sonunu kapatıp tamamlandı sayma
-0 kayıt görünen dönemleri dosya uydurmadan not et
-başka indirmelerden gelen tekrarları toplamda sessionID ile kontrol et
-çeyreklerin bitişi _meta içinde 23:59:00 olabilir sınırdaki son dakikayı not et ve toplamı geniş aralık sorgusuyla karşılaştır
-klasörde dosya varsa önce doğrula sağlam olanın üstüne yazma
-sağlam dosyaları data/raw/acn altında caltech_2018_Q2.json gibi adlandır
-her dosyanın oturum sayısını tarih filtresini ilk ve son bağlantısını kısa bir raporla yaz
-kodları ve git geçmişini değiştirme commit veya push yapma
+ev.caltech.edu/dataset sayfasında site olarak caltech seçilir
+2018 ikinci çeyrekten 2021 üçüncü çeyreğe kadar her çeyrek ayrı indirilir
+from ilk gün 12:00 am to son gün 11:59 pm olacak şekilde ayarlanır minimum energy boş kalır
+sayfadaki sessions found sayısı not edilir inen jsondaki _items sayısıyla karşılaştırılır
+json kesikse yeniden indirilir eksik dosyanın sonunu kapatıp tamamlandı saymayız
+0 kayıt görünen dönemler için dosya oluşturmuyoruz
+tekrarlar toplamda sessionID ile kontrol edilir
+çeyreklerin bitişi _meta içinde 23:59:00 yazabilir sınırdaki son dakika not edilir toplam geniş aralık sorgusuyla karşılaştırılır
+sağlam dosyalar data/raw/acn altına caltech_2018_Q2.json gibi adlandırılır var olan sağlam dosyanın üstüne yazılmaz
+her dosyanın oturum sayısı tarih filtresi ilk ve son bağlantısı kısa bir tabloya yazılır
 
 verileri birleştirme ve kontroller
 

@@ -41,7 +41,7 @@ bu sayı elimizdeki indirmeye ait ileride kaynağın değişmeyeceği anlamına 
 indirmeleri sayfanın download formuyla çeyrek çeyrek yaptık büyük dosyalar kesilebildiği için json açılmadan tamamlandı saymadık
 formdan gelen _meta bitişi 23:59:00 son dakikanın bütün saniyeleri dahil diye düşünmemek gerekiyor
 çeyreklerin toplamı o indirmede geniş aralık sorgusundaki 31424 sayısıyla eşleşti
-ayrıntılı yöntem dosya sayıları ve tekrar indirmek için ajan promptu [yapılanlar](../yapilanlar.md) içinde
+ayrıntılı yöntem dosya sayıları ve tekrar indirme adımları [yapılanlar](../yapilanlar.md) içinde
 
 ilk ocak 2020 denemesinde 783 oturum ve 44 nokta vardı o örnek tüm veri değildi
 şimdiki notebook yalnız caltech_*.json çeyreklerini okuyor eski acndata_sessions dosyaları bu seçime girmiyor

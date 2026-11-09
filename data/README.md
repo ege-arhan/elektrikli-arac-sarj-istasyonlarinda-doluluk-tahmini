@@ -12,7 +12,7 @@ notebook birleşmiş oturumları data/processed/caltech_all_sessions.csv olarak 
 saatlik matris notebook içinde hesaplanıyor ayrıca dosyaya yazılmıyor
 ham veriler ve üretilen csvler gitignore içinde repoda yok
 
-aynı veriyi almak için [indirme yöntemi ve ajan promptu](../yapilanlar.md)
+aynı veriyi almak için [indirme yöntemi ve adımları](../yapilanlar.md)
 alanlar tarih aralıkları ve boyutlar için [veri setleri](VERI_SETLERI.md)
 
 kaynaklar
