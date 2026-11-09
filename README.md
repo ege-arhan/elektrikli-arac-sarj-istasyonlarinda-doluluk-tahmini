@@ -33,6 +33,8 @@ Notebook'lar sırayla:
 4. `notebooks/04_eda_grafikleri.ipynb` EDA
 5. `notebooks/05_model_verisi_ve_baseline.ipynb` model tablosu, train/val/test bölmesi, doğrulama sonuçları
 6. `notebooks/06_norvec_eda.ipynb` Norveç verisi
+7. `notebooks/07_urbanev_eda.ipynb` UrbanEV keşif analizi
+8. `notebooks/08_urbanev_on_isleme.ipynb` UrbanEV bölge tablosu ve bölme
 
 Testler:
 
@@ -44,6 +46,7 @@ python -m pytest tests -q
 
 - `src/load_data.py` oturumları okur, kalite kontrolü yapar, saatlik doluluk matrisi üretir
 - `src/split.py` train/val/test tarih sınırları
+- `src/urbanev.py` UrbanEV bölge tablosu, özellikler ve bölme
 - `src/features/` takvim, hava durumu ve lag özellikleri
 - `tests/` birim testleri
 - `reports/figures/` rapor görselleri
