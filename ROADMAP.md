@@ -76,7 +76,7 @@ ortam kurulumu veri indirme ve okuyucu ikinci haftada yapıldı aşağıdaki kut
 ## 3 hafta 20 - 26 ekim
 
 - [x] ilk deneme için sıralamayı bozmadan yüzde 80 eğitim yüzde 20 test ayrıldı bu iş ikinci haftada yapıldı
-- [ ] yeni denemeler için eğitim döneminden ayrı doğrulama bölümü ayırıp ortak tarih sınırlarını belirleyeceğiz
+- [x] eğitim 2018-05..2019-09 doğrulama 2019-10..2020-02 test 2020-11..2021-09 olarak ayrıldı 2020-03..2020-10 maske dışı src/split.py selmanla teyit edilecek
 - [x] selman geçmiş hava durumunu open-meteo üzerinden aldi src/features/weather.py (caltech tek konum UTC saatlik)
 - [x] selman yerel takvim ve tatil bilgisini ekledi src/features/calendar.py (CA tatil + akademik ara; bazi yaz araliklari yaklasik)
 - [x] hava durumunu saha ve zaman üzerinden eşleştirdik join_weather varsayilan shift_hours=1 ile t+1 hava sizintisini engeller
@@ -88,10 +88,10 @@ ortam kurulumu veri indirme ve okuyucu ikinci haftada yapıldı aşağıdaki kut
 - [x] ege ilk random forest modelini bütün dönem üzerinde eğitti
 - [x] accuracy precision recall ve f1 aynı testte hesaplandı ay ve nokta bazında karşılaştırıldı
 - [x] testte dolu saat görülen 45 noktada baseline 32 random forest 2 noktada daha iyi çıktı 11 noktada eşit kaldı
-- [ ] önceki haftanın aynı saatini kullanan baseline ve lojistik regresyon ile karar ağacını deneyeceğiz
-- [ ] ege önceki haftanın doluluğu ve geçmiş birkaç saatin ortalaması gibi özellikleri doğrulama bölümünde deneyecek
-- [ ] ege random forest xgboost ve catboost modellerini aynı hedef ve zaman ayrımıyla karşılaştıracak
-- [ ] tahmin eşiği ve model ayarları doğrulama verisiyle seçilecek test sonucu ilk deneme olarak ayrıca kaydedilecek
+- [x] önceki hafta baseline ve lojistik regresyon doğrulama kümesinde denendi karar ağacı model sayısını sınırlamak için bırakıldı notebooks/05
+- [x] önceki hafta doluluğu ve geçmiş saatlerin ortalaması src/features/lags.py ile eklendi doğrulamada denendi
+- [ ] ege xgboost ve catboost modellerini aynı hedef ve zaman ayrımıyla random forest ile karşılaştıracak
+- [x] random forest eşiği doğrulama verisiyle seçildi test kümesine bakılmadı xgboost için de aynısı yapılacak
 - [ ] dolu nokta sayısı veya oranı için ayrı regresyon yaparsak mae ve rmse kullanacağız
 
 ## 5 hafta 3 - 9 kasım
