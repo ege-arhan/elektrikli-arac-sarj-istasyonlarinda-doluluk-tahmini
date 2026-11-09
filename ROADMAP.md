@@ -99,8 +99,8 @@ ortam kurulumu veri indirme ve okuyucu ikinci haftada yapıldı aşağıdaki kut
 - [x] selman urbanev eda notebooks/07_urbanev_eda.ipynb birim eksik veri kapasite ve saatlik profil
 - [x] selman urbanev bölge tablosu ve kronolojik bölme src/urbanev.py notebooks/08_urbanev_on_isleme.ipynb
 - [x] selman literatür tablosu 9 çalışma ve faz 1 raporunun kendi bölümleri
-- [ ] yöntem ve veri hazırlama kısmını ara rapora yazacağız
-- [ ] ilk karşılaştırmayı ve veriyle ilgili sınırlamaları rapora ekleyeceğiz
+- [x] yöntem ve veri hazırlama kısmını ara rapora yazacağız
+- [x] ilk karşılaştırmayı ve veriyle ilgili sınırlamaları rapora ekleyeceğiz
 
 ## 6 hafta 10 - 16 kasım
 
