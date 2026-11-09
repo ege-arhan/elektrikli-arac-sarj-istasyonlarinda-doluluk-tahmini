@@ -119,8 +119,11 @@ Shenzhen'deki halka açık şarj altyapısının doluluk, şarj süresi, enerji 
 
 ### Dosya yapısı ve boyutlar
 
-urbanev dosyaları data/raw/UrbanEVDataset altında yerelde var ama modele katılmadı
-aşağıdaki boyutlar kaynak açıklamalarından dosyaların tamamını tek tek sayıp doğrulamadık.
+urbanev dosyaları data/raw/UrbanEVDataset altında yerelde var analiz notebooks/07_urbanev_eda.ipynb ön işleme notebooks/08_urbanev_on_isleme.ipynb
+saatlik occupancy tablosu 4344 x 275 eksik 0 ham istasyon dosyası 1682 ve her biri 52128 satır bu değerleri yerelde saydık
+ocak 2023 ün ikinci yarısından sonra ham busy alanında günlük eksik oran yaklaşık yüzde 10 dan 44 e çıkıyor
+yerel zone-information kapasite toplamı 23441 makaledeki filtrelenmiş kapsam 17532 fark henüz açıklanmadı
+indirdiğimiz kopyada hava durumu dosyası yok
 
 | Dosya/grup | Satır | Sütun | İçerik |
 |---|---:|---:|---|
@@ -135,7 +138,7 @@ Ham istasyon alanları: `time`, `busy`, `idle`, `s_price`, `e_price`, `fast_busy
 
 ### Sürüm seçerken dikkat
 
-Makale ve GitHub örneğinde `occupancy.csv` doluluk oranı olarak anlatılıyor. Dryad değişiklik kaydı ise saatlik dosyanın daha sonra dolu şarj noktası sayısını verecek şekilde değiştiğini söylüyor. Dryad'ın güncel sürüm tarihi 4 Şubat 2026. Dosya adı aynı olsa da hedefin birimi değişebiliyor; hangi sürümü indirdiğimizi kaydetmeliyiz. Sayıyı orana çevirmek için ilgili bölgenin kapasitesi gerekir.
+Makale ve GitHub örneğinde `occupancy.csv` doluluk oranı olarak anlatılıyor. Dryad değişiklik kaydı ise saatlik dosyanın daha sonra dolu şarj noktası sayısını verecek şekilde değiştiğini söylüyor. Dryad'ın güncel sürüm tarihi 4 Şubat 2026. Dosya adı aynı olsa da hedefin birimi değişebiliyor. Bizim kopyamızda değerler 0-373 aralığında dolu nokta sayısı ve station_information.csv de var, yani Eylül 2025 veya sonrası sürüm. Sayıyı orana çevirmek için ilgili bölgenin kapasitesi gerekir.
 
 Hazır temizlenmiş veride ileri/geri doldurma ve aykırı değer düzeltmeleri var. Gelecekten bilgi kullanılıp kullanılmadığını zaman serisi değerlendirmesinde kontrol edeceğiz. Bölge doluluk oranı veya sayısını, tek noktanın `0/1` durumuyla doğrudan kıyaslamayacağız.
 
